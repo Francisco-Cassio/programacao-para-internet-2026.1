@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F27141;
+}
+
+#titulo {
+    color: #F1F2D5;
+    background-color: #F29057;
+    text-align: center;
+}
+
+.titulo-post {
+    color: #F2C2CF;
+}
+
+.autor {
+    background-color: #F2BE5C;
+    text-align: right;
+}
+
+.separador {
+    color: #F2C2CF;
+    text-align: center;
+}
