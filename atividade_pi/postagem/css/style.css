@@ -1,0 +1,94 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #A5A692;
+}
+
+body {
+    font-size: 1rem;
+}
+
+#titulo {
+    color: #FFFF;
+    background-color: #011F26;;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.titulo-post {
+    color: #025E73;
+    font-size: 1.5rem;
+}
+
+.autor {
+    background-color: #BFB78F;
+    text-align: right;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.separador {
+    color: #025E73;
+    text-align: center;
+}
+
+.img-teste {
+    width: 300px;
+}
+
+ol {
+    color: #e5e7eb;
+    list-style-position: inside;
+    max-width: 400px;
+    margin: auto;
+}
+
+li {
+    background: #374151;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    transition: 0.2s;
+}
+
+li:hover {
+    transform: translateX(6px);
+    background: #4b5563;
+}
+
+li:first-child::before {
+    content: "🏆 ";
+}
+
+.lista-principal {
+    list-style-position: outside;
+    padding-left: 40px;
+}
+
+.lista-principal > li {
+    background: #9499c3;
+    color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.lista-principal ul {
+    list-style-type: "🎯 ";
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.lista-principal ul li {
+    background: transparent;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.lista-principal li:hover {
+    transform: none; 
+}
+.lista-principal li:first-child::before {
+    content: ""; 
+}

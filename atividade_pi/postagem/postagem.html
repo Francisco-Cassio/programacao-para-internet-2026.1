@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog e Tecnologia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+            font-family: "Tilt Neon";
+            src: url("../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Loki Cola";
+            src: url("../fonts/loki_cola/LOKICOLA.TTF") format("truetype");
+        }
+
+        #lorem {
+            font-family: "Tilt Neon";
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        #normal-negrito {
+            font-family: "Loki Cola";
+        }
+
+        #normal {
+            font-weight: 700;
+        }
+
+        #negrito {
+            font-weight: 900;
+           
+        }
+
+        #inclinado-normal {
+            font-style: oblique 10deg;
+        }
+
+        #mais-inclinado {
+            font-style: oblique 20deg;
+        }
+
+        /* Nível 1 — Básico */
+        #menu-postagens ul li a, 
+        .link-topo {
+            text-decoration: none;        /* Remove sublinhado */
+            color: #011F26;               /* Cor padrão */
+            transition: all 0.4s ease;    /* Transição suave (Nível 1, 2 e 3) */
+            display: inline-block;        /* Permite transformações */
+            border-left: 0px solid transparent; /* Base para o Nível 3 */
+        }
+
+        /* Nível 1 & 2 — Interação Visual */
+        #menu-postagens ul li a:hover {
+            color: #FFFF;                 /* Altera cor no hover */
+            transform: translateX(10px) scale(1.1); /* Deslocamento e aumento */
+            font-weight: 900;             /* Altera peso da fonte */
+        }
+
+        /* Nível 3 — Destaque com Bordas */
+        #menu-postagens ul li a:hover {
+            border-left: 5px solid #025E73; /* Adiciona borda lateral */
+            padding-left: 10px;            /* Espaço para a borda não sobrepor o texto */
+            background-color: rgba(255, 255, 255, 0.2); /* Ganha destaque no fundo */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Mini Blog de Tecnologia</h1>
+
+    <h2 id="html-post" class="titulo-post">Primeiros passos com HTML</h2>
+    <p>HTML é a base das páginas web. Com ele organizamos títulos, textos e a estrutura do conteúdo apresentado no navegador.</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733; &#9733; &#9733; </p>
+
+    <h2 id="css-post" class="titulo-post">O papel do CSS</h2>
+    <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tomando os sites mais agradáveis visualmente.</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733; &#9733; &#9733; </p>
+
+    <h2 id="python-post" class="titulo-post">Validação do código</h2>
+    <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomandados para desenvolvimento web.</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733; &#9733; &#9733; </p>
+
+    <h2 class="titulo-post">Código Python: Padrão de Estrelas</h2>
+    <p>Abaixo temos um exemplo de como imprimir padrões no terminal utilizando loops aninhados em Python.</p>
+    
+    <pre><code>
+    def imprimir_padrao(num_linhas):
+        for i in range(num_linhas):
+            for num_colunas in range(num_linhas-i):
+                print("*", end="")
+            print()
+    </code></pre>
+
+    <p class="autor">Autor: Ely Miranda | Data: 17/03/2026</p>
+    <p class="separador">&#9733; &#9733; &#9733; </p>
+
+    <div id="lorem">
+        <h2 class="titulo-post">Ipsum Lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur numquam officia ab vitae accusantium id molestiae. Quidem repellendus quaerat dolor earum deserunt? Quaerat reiciendis soluta cupiditate inventore impedit laborum architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit sit ratione saepe voluptate reprehenderit dolorem, cumque labore reiciendis pariatur sed! Unde, dolor voluptatibus nulla minus perspiciatis inventore nisi molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, recusandae. Beatae nobis eum temporibus fugit nemo ratione impedit tempore. Aliquid nemo explicabo provident distinctio placeat laboriosam maxime dolores perspiciatis. Id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, non error consequuntur doloribus quia hic reprehenderit! Ullam inventore enim iste, debitis corrupti repellat? Facilis iste esse natus, eos dolore laudantium..+</p>
+        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+        <p class="separador">&#9733; &#9733; &#9733; </p>
+    </div>
+
+    <div id="normal-negrito">
+        <h2 class="titulo-post">Normal e Negrito</h2>
+        <p id="normal">Texto Normal</p>
+        <p id="negrito">Texto Negrito</p>
+        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+        <p class="separador">&#9733; &#9733; &#9733; </p>
+    </div>
+
+    <div id="inclinacoes">
+        <h2 class="titulo-post">Inclinações</h2>
+        <p id="inclinado-normal">Estilo Normal</p>
+        <p id="mais-inclinado">2 Níveis Inclinados</p>
+        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+        <p class="separador">&#9733; &#9733; &#9733; </p>
+    </div>
+
+    <h3>Imagem baixa resolução</h3>
+    <img class=“img-teste” src="../images/imagem-menor.jpg"
+    alt = “imagem de baixa resolução”>
+    <p>Imagem leve e rápida.</p>
+
+    <h3>Imagem média resolução</h3>
+    <img class=“img-teste”
+    src="../images/imagem-media.jpg" alt = “imagem de média resolução”>
+    <p>Equilíbrio entre qualidade e desempenho.</p>
+
+    <h3>Imagem alta resolução</h3>
+
+    <img class=“img-teste”
+    src="../images/imagem-grande.jpg" alt = “imagem de alta resolução>
+    <p>Alta qualidade, maior tempo de carregamento.</p>
+
+    <h2 class="titulo-post">Lista Ordenada</h2>
+
+    <ol class="lista-ordenada">
+        <li>Café expresso intenso</li>
+        <li>Cappuccino cremoso</li>
+        <li>Chocolate quente especial</li>
+        <li>Chá de hortelã</li>
+    </ol>
+
+    <h2 class="titulo-post">Lista de Aprendizado</h2>
+
+    <ol class="lista-principal">
+        <li>
+            <strong>Aprender HTML</strong>
+            <ul>
+                <li>Revisar estrutura básica</li>
+                <li>Criar página com títulos</li>
+                <li>Inserir parágrafos e listas</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Aprender CSS</strong>
+            <ul>
+                <li>Aplicar cores e fontes</li>
+                <li>Centralizar elementos</li>
+                <li>Ajustar margens e espaçamentos</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Aprender JavaScript</strong>
+            <ul>
+                <li>Criar botão de teste</li>
+                <li>Mostrar mensagem com alert</li>
+                <li>Alterar conteúdo de um elemento</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h1 id="titulo">Mini Blog de Tecnologia</h1>
+
+    <nav id="menu-postagens">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#html-post">Primeiros passos com HTML</a></li>
+            <li><a href="#css-post">O papel do CSS</a></li>
+            <li><a href="#python-post">Código Python</a></li>
+        </ul>
+    </nav>
+    <a href="#titulo" class="link-topo">↑ Voltar ao topo</a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

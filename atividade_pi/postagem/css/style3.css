@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(gray, black);
+    min-height: 100vh;
+    margin: 0;
+    font-size: 1rem
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+p, pre {
+    color: rgb(223, 222, 222);
+}
+
+#titulo {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.autor {
+    color: black;
+    background-color: white;
+    text-align: right;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.separador {
+    text-align: center;
+}
+
+.img-teste {
+    width: 300px;
+}
+
+ol {
+    color: #e5e7eb;
+    list-style-position: inside;
+    max-width: 400px;
+    margin: auto;
+}
+
+.lista-ordenada > li {
+    background: #374151;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    transition: 0.2s;
+}
+
+.lista-ordenada > li:hover {
+    transform: translateX(6px);
+    background: #4b5563;
+}
+
+.lista-ordenada > li:first-child::before {
+    content: "🏆 ";
+}
+
+.lista-principal {
+    list-style-position: outside;
+    padding-left: 40px;
+}
+
+.lista-principal > li {
+    background: #9499c3;
+    color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.lista-principal ul {
+    list-style-type: "🎯 ";
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.lista-principal ul li {
+    background: transparent;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.lista-principal li:hover {
+    transform: none; 
+}
+.lista-principal li:first-child::before {
+    content: ""; 
+}
