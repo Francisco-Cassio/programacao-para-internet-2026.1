@@ -188,6 +188,74 @@
             <li><a href="#python-post">Código Python</a></li>
         </ul>
     </nav>
+
+    <aside class="sidebar-extra">
+        <h3>Dica de Estudo</h3>
+        <p>Pratique CSS Grid e Flexbox para dominar layouts modernos!</p>
+    </aside>
+
+    <section>
+        <h2 class="titulo-post">Tabela de Desempenho de Linguagens</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse; background-color: white; color: black;">
+            <caption>Comparativo de Performance e Popularidade (2026)</caption> <colgroup> <col span="1" style="width: 40%;">
+                <col span="2" style="background-color: #f3f4f6;">
+            </colgroup>
+
+            <thead> <tr>
+                    <th>Linguagem</th>
+                    <th>Velocidade</th>
+                    <th>Demanda</th>
+                </tr>
+            </thead>
+
+            <tbody> <tr>
+                    <td>Python</td>
+                    <td>Média</td>
+                    <td>Altíssima</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Alta</td>
+                    <td>Média</td>
+                </tr>
+            </tbody>
+
+            <tfoot> <tr>
+                    <td>Total Analisado</td>
+                    <td colspan="2">2 Categorias principais</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <img 
+        src="../images/imagem-media.jpg" 
+        srcset="../images/imagem-menor.jpg 480w, 
+                ../images/imagem-media.jpg 800w, 
+                ../images/imagem-grande.jpg 1200w" 
+        sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 1200px" 
+        alt="Exemplo de imagem responsiva"
+        class="img-responsiva">
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="../images/imagem-menor.jpg">
+        <source media="(max-width: 1024px)" srcset="../images/imagem-media.jpg">
+        <img src="../images/imagem-grande.jpg" alt="Banner do Blog">
+    </picture>
+
+    <form style="max-width: 500px; margin: 20px auto;">
+        <fieldset style="border-radius: 8px; padding: 20px;">
+            <legend>Formulário de Cadastro</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" style="width: 100%; margin-bottom: 15px;">
+            
+            <label>Gênero:</label><br>
+            <input type="radio" id="masc" name="genero" value="M"> <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="F"> <label for="fem">Feminino</label>
+        </fieldset>
+    </form>
+
     <a href="#titulo" class="link-topo">↑ Voltar ao topo</a>
 
     <script src="../js/script.js"></script>
