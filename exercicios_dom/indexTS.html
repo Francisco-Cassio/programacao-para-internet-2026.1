@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de uso do DOM</title>
+    <script type="module" src="./dist/scripts.js" defer></script>
+</head>
+<body>
+    <div id="aleatorio">
+        <h1>Parágrafo Aleatório</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores iusto sequi ipsa quisquam sint quos blanditiis, animi ullam maiores voluptates fuga voluptate, delectus aspernatur, eos tempora odio quam! Impedit?.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat iusto fugit debitis voluptas quis, odio quidem rem temporibus cum. Praesentium illo soluta est fugiat similique totam quia minima nisi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt praesentium nulla facere vitae facilis vero corporis magni dolores nesciunt aut commodi, voluptatum id velit nam labore animi ducimus. Labore, assumenda.</p>
+        <button id="contador">Número de Parágrafos</button>
+    </div>
+    <div id="contagem"></div>
+
+    <div id="corTextos">
+        <h1>Exemplo de uso do DOM</h1>
+        <p id="paragrafo">Clique no botão abaixo para alterar o texto deste parágrafo:</p>
+        <button id="botao">Clique aqui</button>
+        <button id="limpar">Limpar Texto</button>
+        <br><br>
+        <button id="alterarCor">Alterar Cor dos Textos</button>
+    </div>
+
+    <div id="alterar-tamanho">
+        <h1>Texto de Referência</h1>
+        <p id="referencia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos enim, dolor commodi magni debitis incidunt iure ipsum obcaecati dicta animi ex numquam nostrum, adipisci error? Aperiam quod eius corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nobis! Cum illo ipsam obcaecati iusto? Expedita reprehenderit tenetur officiis officia rerum laborum quaerat, commodi cum repellendus, numquam similique nihil ratione? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero eius praesentium ut quasi. Non culpa provident, ratione accusantium neque tempora totam voluptatibus nulla suscipit fugiat officiis vitae necessitatibus. Iste, ea!</p>
+        <button id="transferir">Tranferir Texto</button>
+        <h1>Texto em Caixa Alta</h1>
+        <p id="caixa-alta"></p>
+    </div>
+
+    <div id="mudar-cores">
+        <h1>Alterar Cores</h1>
+        <button id="alterar-cores">Alterar Cores</button>
+        <button id="resetar-cores">Resetar Cores</button>
+    </div>
+
+    <div id="aumentar-diminuir">
+        <h1>Alterar Tamanho</h1>
+        <button id="aumentar-textos">Aumentar Textos</button>
+        <button id="diminuir-textos">Diminuir Textos</button>
+    </div>
+
+    <div id="calculadora">
+        <h1>Calculadora</h1>
+        Valor 1: <input type="text" id="num1"><br><br>
+        Valor 2: <input type="text" id="num2"><br><br>
+        <div id="operacao">
+            <input type="radio" name="operacao" id="soma" checked>Soma
+            <input type="radio" name="operacao" id="subtracao">Subtração
+            <input type="radio" name="operacao" id="multiplicacao">Multiplicação
+            <input type="radio" name="operacao" id="divisao">Divisão
+        </div>
+        <br>
+        <button id="calcular">Calcular</button>
+        <br><br>
+        <div id="resultado">Resultado: </div>
+    </div>
+    <br><br>
+    <div id="lista">
+        <input type="text" id="text" placeholder="Digite algo...">
+        <button id="add-button">Adicionar à Lista</button>
+        <ul id="ul"></ul>
+    </div>
+    
+    <div id="campo-select">
+        <input type="text" id="input-select" placeholder="Digite algo...">
+        <button id="add-button2">Adicionar ao Select</button>
+        <select id="select">
+            <option value="">Selecione uma opção</option>
+        </select>
+    </div>
+</body>
+</html>
